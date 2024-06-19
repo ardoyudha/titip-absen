@@ -23,9 +23,9 @@ export async function goToLiveAttendance(page: Page) {
   await page.getByRole("button", { name: "Sign in", exact: true }).click();
 
   // attendance page
-  await page.goto("https://hr.talenta.co/employee/dashboard");
+  await page.goto("https://hr.talenta.co/live-attendance");
   //await page.getByText("Live attendance", { exact: true }).click();
-  await page.getByText("Live attendance", { exact: true }).click({ timeout: 10000 }); // Timeout set to 10 seconds
+  //await page.getByText("Live attendance", { exact: true }).click({ timeout: 10000 }); // Timeout set to 10 seconds
 }
 
 export function skip() {
